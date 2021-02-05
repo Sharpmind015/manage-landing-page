@@ -1,0 +1,50 @@
+.menu {
+  @include flex(null);
+  &__list {
+    @include media(840px) {
+      padding: 1rem 0;
+    }
+  }
+  &__link {
+    font-size: $font-sm;
+    color: $very-dark-blue;
+    font-weight: 500;
+    padding: 0 1rem;
+    &:hover {
+      color: $dark-grayish-blue;
+    }
+  }
+  @include media(840px) {
+    @include flex(column);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10rem;
+    width: 85%;
+    border-radius: 6px;
+    padding: 3rem 2rem;
+    background-color: #fff;
+    //Set display to none initially. This declaration should not be moved up to avoid cascading issues
+    display: none;
+  }
+  @include media($mobile) {
+    width: 90%;
+  }
+}
+.is-open {
+  display: flex;
+}
+.menu-bg {
+  display: none;
+}
+.menu-bg.is-open {
+  position: absolute;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    transparent 10%,
+    rgba(0, 0, 0, 0.5) 45%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}

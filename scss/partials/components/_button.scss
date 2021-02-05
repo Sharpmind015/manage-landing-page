@@ -1,0 +1,32 @@
+.btn {
+  display: block;
+  outline: none;
+  font-size: $font-sm;
+  padding: 0.8rem 2.5rem;
+  cursor: pointer;
+  border-radius: 25px;
+  //Primary modifier
+  &--primary {
+    color: #fff;
+    background-color: $primary-bright-red;
+    border: 1px solid $primary-bright-red;
+    &:hover,
+    &:focus {
+      background-color: hsl(12, 88%, 69%);
+      border: 1px solid hsl(12, 88%, 69%);
+    }
+  }
+  //Secondary modifier
+  &--secondary {
+    color: $primary-bright-red;
+    background: #fff;
+    border: 1px solid #fff;
+    &:hover,
+    &:focus {
+      color: hsl(12, 88%, 69%);
+    }
+  }
+  &--shadow {
+    box-shadow: 0 4px 4px $very-pale-red;
+  }
+}

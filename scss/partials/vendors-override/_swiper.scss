@@ -1,0 +1,9 @@
+.swiper-pagination-bullet {
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  border: 3px solid $primary-bright-red;
+}
+.swiper-pagination-bullet-active {
+  background: $primary-bright-red;
+}

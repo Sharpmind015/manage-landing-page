@@ -1,0 +1,19 @@
+@import "partials/global";
+@import "partials/base";
+
+@import "partials/components/menu";
+@import "partials/components/button";
+@import "partials/components/form";
+@import "partials/components/hero";
+@import "partials/components/features";
+@import "partials/components/testimonial-card";
+@import "partials/components/socials";
+
+@import "partials/layout/header";
+@import "partials/layout/feature";
+@import "partials/layout/simplify";
+@import "partials/layout/footer";
+
+@import "partials/utilities/utilities";
+
+@import "partials/vendors-override/swiper";

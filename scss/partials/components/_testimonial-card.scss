@@ -1,0 +1,15 @@
+.testimonial-card {
+  background-color: $very-light-gray;
+  padding: 30px 10px 15px 10px;
+  text-align: center;
+  &__img {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+  }
+  &__heading {
+    color: $very-dark-blue;
+    font-size: $font-md;
+  }
+}

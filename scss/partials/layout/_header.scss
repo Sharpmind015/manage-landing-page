@@ -1,0 +1,19 @@
+.header {
+  padding: 3rem 0;
+}
+.nav {
+  @include flex(null, center, space-between);
+  .btn {
+    @include media(840px) {
+      display: none;
+    }
+  }
+}
+.hamburger {
+  display: none;
+  // position: relative;
+  // z-index: 2;
+  @include media(840px) {
+    display: block;
+  }
+}

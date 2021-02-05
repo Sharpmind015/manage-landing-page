@@ -1,0 +1,46 @@
+.footer {
+  background-color: $very-dark-blue;
+  padding: 60px 0;
+  .wrapper {
+    @include flex(null, center, space-between);
+    @include media(840px) {
+      @include flex(column-reverse , stretch, space-between);
+    }
+  }
+  &__logos {
+    @include flex(column-reverse , center, space-between);
+    .site-logo {
+      @include media(840px) {
+        margin-top: 4rem;
+      }
+    }
+  }
+  &__links-wrapper {
+    flex: 0 0 30%;
+    @include flex(null, center, space-between);
+    @include media(840px) {
+      margin-top: 4rem;
+    }
+  }
+  &__links:nth-child(1) {
+    margin-right: 2rem;
+    @include media(840px) {
+      margin-right: 6rem;
+      padding: 0 3.5rem;
+    }
+  }
+  &__link {
+    font-size: 1.8rem;
+    color: hsl(0, 0%, 78%);
+    &:hover {
+      color: $primary-bright-red;
+    }
+  }
+  &__copyright {
+    color: $dark-grayish-blue;
+    @include media(840px) {
+      order: -4;
+      margin-top: 4rem;
+    }
+  }
+}

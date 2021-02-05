@@ -1,0 +1,27 @@
+.features {
+  text-align: left;
+  &__heading {
+    color: $very-dark-blue;
+    font-size: $font-md;
+    @include media(840px) {
+      background-color: $very-pale-red;
+      padding: 8px 0;
+      //Hack to span background:  in full width
+      width: 100vw;
+    }
+  }
+  &__number {
+    font-size: $font-sm;
+    left: -80px;
+    color: $very-light-gray;
+    background-color: $primary-bright-red;
+    border-radius: 30px;
+    padding: 8px 25px;
+    @include media(840px) {
+      margin-right: 10px;
+    }
+  }
+  //styles for content if needed
+  &__content {
+  }
+}

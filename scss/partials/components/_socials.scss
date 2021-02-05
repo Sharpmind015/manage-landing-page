@@ -1,0 +1,20 @@
+.socials {
+  &__link {
+    margin-right: 1rem;
+    @include media(840px) {
+      margin-right: 3rem;
+    }
+  }
+  &__link:last-child {
+    margin-right: 0;
+  }
+  &__img {
+    @include media(840px) {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  @include media(840px) {
+    margin-top: 4rem;
+  }
+}

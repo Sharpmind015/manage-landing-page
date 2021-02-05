@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Manage landing page</title>
+  <!--Swiper CSS-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!--MAIN CSS-->
+  <link rel="stylesheet" href="css/main.min.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="menu-bg" id="js-menu-bg"></div>
+  <!--Banner pattern-->
+  <div class="bg-pattern bg-pattern--1">
+    <img src="./images/bg-tablet-pattern.svg" alt="">
+  </div>
+
+  <!--HEADER-->
+  <header class="header">
+    <div class="l-container">
+      <!--NAVIGATION BAR-->
+      <nav class="nav">
+        <a href="index.html" class="site-logo">
+          <img src="./images/logo.svg" alt="Manage logo">
+        </a>
+        <!--NAV MENU-->
+        <ul class="menu" id="js-menu">
+          <li class="menu__list">
+            <a href="#" class="menu__link">Pricing</a>
+          </li>
+          <li class="menu__list">
+            <a href="#" class="menu__link">Product</a>
+          </li>
+          <li class="menu__list">
+            <a href="#" class="menu__link">About Us</a>
+          </li>
+          <li class="menu__list">
+            <a href="#" class="menu__link">Careers</a>
+          </li>
+          <li class="menu__list">
+            <a href="#" class="menu__link">Community</a>
+          </li>
+        </ul>
+        <a href="#" class="btn btn--primary btn--shadow">Get Started</a>
+        <button class="hamburger" id="js-menu-button">
+          <img src="./images/icon-hamburger.svg" alt="Hamburger">
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!--HERO SECTION-->
+    <section class="hero l-container u-mt-6">
+      <div class="hero__main">
+        <h1 class="hero__heading">Bring everyone together to build better products.</h1>
+        <p class="hero__content u-mt-2">Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.</p>
+        <a href="#" class="btn btn--primary btn--shadow u-inline-block u-mt-2">Get Started</a>
+      </div>
+      <div class="hero__img">
+        <img src="./images/illustration-intro.svg" alt="Illustration">
+      </div>
+    </section>
+
+    <!--FEATURE SECTION-->
+    <section class="l-container u-mt-6 feature-section">
+      <div class="bg-pattern bg-pattern--2">
+        <img src="./images/bg-tablet-pattern.svg" alt="">
+      </div>
+      <div class="feature-section__main u-self-start">
+        <h2>What’s different about Manage?</h2>
+        <p class="u-mt-3">Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern
+          digital product teams.</p>
+      </div>
+      <!--FEATURES LISTS-->
+      <ul class="features u-relative">
+        <li class="features__list">
+          <h3 class="features__heading"><span class="features__number u-absolute u-md-static">01</span>Track company-wide progress</h3>
+          <p class="features__content u-mt-2">See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the
+            way done to the smallest of details. Never lose sight of the bigger picture again.</p>
+        </li>
+        <li class="features__list u-mt-3">
+          <h3 class="features__heading"><span class="features__number u-absolute u-md-static">02</span> Advanced built-in reports</h3>
+          <p class="features__content u-mt-2">Set internal delivery estimates and track progress toward company goals. Our customisable dashboard helps you build
+            out the reports you need to keep key stakeholders informed.</p>
+        </li>
+        <li class="features__list u-mt-3">
+          <h3 class="features__heading"><span class="features__number u-absolute u-md-static">03</span>Everything you need in one place</h3>
+          <p class="features__content u-mt-2">Stop jumping from one service to another to communicate, store files, track tasks and share documents. Manage offers
+            an all-in-one team productivity solution</p>
+        </li>
+      </ul>
+    </section>
+
+    <!--TESTIMONIAL SECTION-->
+    <section class="testimonial u-mt-6">
+      <h2 class="u-text-center">What they’ve said</h2>
+
+      <!--Swipe Slide-->
+      <div class="swiper-container swiper-container-1 u-mt-6 u-pb-5">
+        <!--TESTIMONIAL LISTS-->
+        <ul class="swiper-wrapper">
+          <div class="swiper-slide">
+            <li class="testimonial-card u-mt-6 u-relative">
+              <img src="./images/avatar-anisha.png" alt="Anisha" class="testimonial-card__img u-absolute u-top-0">
+              <h3 class="testimonial-card__heading u-mt-3">Anisha Li</h3>
+              <p class="testimonial-card__content u-mt-2">
+                <blockquote>“Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at
+                  all times keeps everyone motivated.”</blockquote>
+              </p>
+            </li>
+          </div>
+          <div class="swiper-slide">
+            <li class="testimonial-card u-mt-6 u-relative">
+              <img src="./images/avatar-ali.png" alt="Ali" class="testimonial-card__img u-absolute u-top-0">
+              <h3 class="testimonial-card__heading u-mt-3">Ali Bravo</h3>
+              <p class="testimonial-card__content u-mt-2">
+                <blockquote>“We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel
+                  confusion and everyone is much more focused.”</blockquote>
+              </p>
+            </li>
+          </div>
+          <div class="swiper-slide">
+            <li class="testimonial-card u-mt-6 u-relative">
+              <img src="./images/avatar-richard.png" alt="Richard" class="testimonial-card__img u-absolute u-top-0">
+              <h3 class="testimonial-card__heading u-mt-3">Richard Watts</h3>
+              <p class="testimonial-card__content u-mt-2">
+                <blockquote> “Manage allows us to provide structure and process. It keeps us organized and focused. I can’t stop recommending
+                  them to everyone I talk to!”</blockquote>
+              </p>
+            </li>
+          </div>
+          <div class="swiper-slide">
+            <li class="testimonial-card u-mt-6 u-relative">
+              <img src="./images/avatar-shanai.png" alt="Shanai" class="testimonial-card__img u-absolute u-top-0">
+              <h3 class="testimonial-card__heading u-mt-3">Shanai Gough</h3>
+              <p class="testimonial-card__content u-mt-2">
+                <blockquote>“Their software allows us to track, manage and collaborate on our projects from anywhere. It keeps the whole
+                  team in-sync without being intrusive.”</blockquote>
+              </p>
+            </li>
+          </div>
+        </ul>
+        <!--swiper pagination-->
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="u-text-center u-mt-4"><a href="#" class="btn btn--primary u-inline-block">Get Started</a></div>
+    </section>
+
+    <!--SIMPLIFY SECTION-->
+    <section class="u-mt-5 simplify u-relative">
+      <div class="l-container wrapper">
+        <h2>Simplify how your team works today.</h2>
+        <a href="#" class="btn btn--secondary u-inline-block">Get Started</a>
+      </div>
+      <!--BAnner patterns for simplify section-->
+      <div class="bg-pattern bg-pattern--3">
+        <img src="./images/bg-tablet-pattern.svg" alt="">
+      </div>
+      <div class="bg-pattern bg-pattern--4">
+        <img src="./images/bg-tablet-pattern.svg" alt="">
+      </div>
+    </section>
+  </main>
+
+
+  <!--FOOTER-->
+  <footer class="footer">
+    <div class="l-container wrapper u-relative">
+      <!--LOGOS-->
+      <div class="footer__logos u-self-start u-md-self-center">
+        <a href="index.html" class="site-logo">
+          <img src="./images/logo2.svg" alt="Manage logo">
+        </a>
+        <div class="socials u-absolute u-left-0 u-bottom-0 u-md-static">
+          <a class="socials__link" href="facebook.com"><img class="socials__img" src="./images/icon-facebook.svg" alt="facebook"></a>
+          <a class="socials__link" href="youtube.com"><img class="socials__img" src="./images/icon-youtube.svg" alt="youtube"></a>
+          <a class="socials__link" href="twitter.com"><img class="socials__img" src="./images/icon-twitter.svg" alt="twitter"></a>
+          <a class="socials__link" href="pinterest.com"><img class="socials__img" src="./images/icon-pinterest.svg" alt="pinterest"></a>
+          <a class="socials__link" href="instagram.com"><img class="socials__img" src="./images/icon-instagram.svg" alt="instagram"></a>
+        </div>
+      </div>
+      <!--USEFUL LINKS-->
+      <div class="footer__links-wrapper">
+        <ul class="footer__links">
+          <li><a href="index.html" class="footer__link">Home</a></li>
+          <li class="u-mt-1"><a href="index.html" class="footer__link">Pricing</a></li>
+          <li class="u-mt-1"><a href="index.html" class="footer__link">Products</a></li>
+          <li class="u-mt-1"><a href="index.html" class="footer__link">About us</a></li>
+        </ul>
+        <ul class="footer__links u-self-start">
+          <li><a href="index.html" class="footer__link">Careers</a></li>
+          <li class="u-mt-1"><a href="index.html" class="footer__link">Community</a></li>
+          <li class="u-mt-1"><a href="index.html" class="footer__link">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <!--FORM-->
+      <form class="form" id="js-form">
+        <div class="form__wrapper u-relative">
+          <input type="text" class="form__input" id="js-input" placeholder="Updates in your inbox...">
+          <p class="form__error u-absolute" id="js-error"></p>
+        </div>
+        <input type="submit" class="btn btn--primary u-inline-block" value="Go">
+      </form>
+      <p class="footer__copyright u-text-center u-absolute u-bottom-0 u-right-0 u-md-static">Copyright 2020. All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <!--attribution-->
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/Sharpmind015">Deji</a>.
+  </div>
+
+
+  <!--Swiper JS-->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

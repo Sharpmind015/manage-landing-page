@@ -1,0 +1,44 @@
+//For loop to generate margin-top utility classes
+@for $i from 1 through 6 {
+  .u-mt-#{$i} {
+    margin-top: $i * 1rem;
+  }
+}
+.u-pb-5 {
+  padding-bottom: 5rem;
+}
+.u-inline-block {
+  display: inline-block;
+}
+.u-text-center {
+  text-align: center;
+}
+.u-relative {
+  position: relative;
+}
+.u-absolute {
+  position: absolute;
+}
+.u-top-0 {
+  top: 0;
+}
+.u-right-0 {
+  right: 0;
+}
+.u-bottom-0 {
+  bottom: 0;
+}
+.u-left-0 {
+  left: 0;
+}
+.u-self-start {
+  align-self: flex-start;
+}
+@include media(840px) {
+  .u-md-static {
+    position: static;
+  }
+  .u-md-self-center {
+    align-self: center;
+  }
+}

@@ -1,0 +1,23 @@
+.feature-section {
+  position: relative;
+  @include flex(null, center, space-between);
+  @include media(840px) {
+    display: block;
+    text-align: center;
+  }
+  &__main {
+    flex: 0 0 40%;
+    p {
+      width: 80%;
+      @include media(840px) {
+        width: 100%;
+      }
+    }
+  }
+  ul {
+    flex: 0 0 50%;
+    @include media(840px) {
+      margin-top: 5rem;
+    }
+  }
+}

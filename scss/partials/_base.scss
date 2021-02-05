@@ -1,0 +1,122 @@
+// General
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap');
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 10px;
+}
+html,
+body {
+  font-family: $font-family;
+  line-height: 1.5;
+  width: 100%;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+}
+body {
+  overflow: hidden;
+}
+
+//extend
+%small {
+  font-size: $font-sm;
+}
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+h2 {
+  color: $very-dark-blue;
+  font-size: $font-lg;
+  font-weight: 700;
+}
+a {
+  @extend %small;
+  font-weight: 500;
+  text-decoration: none;
+  @include transition;
+}
+ul {
+  list-style: none;
+}
+p,
+blockquote {
+  @extend %small;
+  font-weight: 400;
+  color: $dark-grayish-blue;
+}
+button {
+  outline: none;
+  border: none;
+}
+.l-container {
+  margin: 0 auto;
+  width: 85%;
+  @include media($mobile) {
+    width: 93%;
+  }
+}
+
+// Background patterns
+.bg-pattern {
+  position: absolute;
+  z-index: -3;
+}
+.bg-pattern--1 {
+  top: -10%;
+  right: -25%;
+  transform: rotate(-180deg);
+  @include media(840px) {
+    top: -7%;
+    right: -16%;
+  }
+  @include media($mobile) {
+    right: -60%;
+    top: -5%;
+  }
+}
+.bg-pattern--2 {
+  left: -80%;
+  bottom: -120%;
+  @include media($desktop) {
+    left: -50%;
+    bottom: -160%;
+  }
+  @include media(840px) {
+    left: initial;
+    bottom: 90%;
+    right: -45%;
+    width: 70%;
+  }
+  @include media(600px) {
+    bottom: 100%;
+    right: -40%;
+  }
+}
+%opaque {
+  opacity: 0.1;
+}
+.bg-pattern--3 {
+  @extend %opaque;
+  width: 30%;
+  top: -150%;
+  right: -20%;
+  transform: rotate(180deg);
+}
+.bg-pattern--4 {
+  @extend %opaque;
+  width: 40%;
+  top: 0;
+  left: 5%;
+  @include media(767px) {
+    width: 90%;
+    left: -40%;
+  }
+}

@@ -1,0 +1,24 @@
+.simplify {
+  z-index: 2;
+  overflow: hidden;
+  background-color: $primary-bright-red;
+  padding: 30px 0;
+  .wrapper {
+    min-height: 100px;
+    @include flex(null, center, space-between);
+    @include media(840px) {
+      @include flex(column);
+      padding: 60px 0;
+    }
+  }
+  //shame
+  h2 {
+    color: #fff;
+    flex: 0 0 35%;
+    @include media(840px) {
+      text-align: center;
+      flex: 0 0 50%;
+      margin-bottom: 20px;
+    }
+  }
+}
